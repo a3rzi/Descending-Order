@@ -82,12 +82,38 @@ public class FunctionTest {
     void convertTest2() {
         String s= "hello";
         char[] c = s.toCharArray();
-        System.out.println(c);
+        //System.out.println(c);
         //c.length = count of c array index
         Character[] newArray = new Character[c.length];
         for (int i = 0; i < c.length; i++) {
             System.out.println(i);
             newArray[i] = c[i];
+        }
+        for (Character m : newArray) {
+            System.out.println(m);
+        }
+
+    }
+
+    @Test
+    void convert3() {
+        int n = 12345;
+        //i 0 1/ 12/ 23/ 34 / 45
+        String M = String.valueOf(n);
+        char[] d = M.toCharArray();
+
+        for (char i : d) {
+            Arrays.sort(d);
+        }
+        char[] reverse = new char[d.length];
+
+        for(int m=0; m<reverse.length;m++){
+            reverse[m] = d[reverse.length-1-m]; //5-1-0
+            System.out.println(m);
+
+        }
+        for (char c : reverse) {
+            System.out.println(c);
         }
 
     }

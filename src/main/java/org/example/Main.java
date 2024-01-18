@@ -20,12 +20,11 @@ public class Main {
         String int2str = String.valueOf(num);
 
         char[] str2charArray = int2str.toCharArray();
-
-        Character[] char2Charcter = new Character[str2charArray.length];
-        for (int i = 0; i<str2charArray.length;i++){
-            char2Charcter[i] = str2charArray[i];
-            Arrays.sort(char2Charcter, Collections.reverseOrder());
+        Arrays.sort(str2charArray);
+        for (char i : str2charArray) {
+            System.out.println(i);
         }
+
 
         return 0;
     }
