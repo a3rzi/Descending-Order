@@ -115,6 +115,19 @@ public class FunctionTest {
         for (char c : reverse) {
             System.out.println(c);
         }
+    }
 
+    @Test
+    void forTest() {
+        int[] n = {3,5,4,6,9,7,1,8,2};
+       // Arrays.sort(n);
+
+        int[] reverse = new int[n.length];
+        for (int i = 0; i<reverse.length;i++){
+            reverse[i] = n[reverse.length-1-i];
+        }
+        for (int m : reverse) {
+            System.out.print(m);
+        }
     }
 }
